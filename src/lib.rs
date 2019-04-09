@@ -4,6 +4,8 @@ use std::{io, mem, alloc, ptr};
 use std::os::unix::net;
 use std::os::unix::io::{RawFd, AsRawFd, FromRawFd};
 
+pub mod changelog;
+
 /// Delegate implementation of Receivable or Sendable to a given expression for multiple types at
 /// a time, reducing code duplication significantly.
 macro_rules! delegate {
